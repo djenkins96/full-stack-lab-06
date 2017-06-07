@@ -7,13 +7,10 @@ var locations = ['international space station', 'museum of towing', 'massage par
 
 function modusOperandi(cycle) {
     var a = cycle;
-    var b = cycle;
-    var c = cycle;
+
     return function () {
-        alert("I accuse " + friends[(a - 1) % 5] + " with the " + weapons[(b - 1) % 20] + "  in the " + locations[(c - 1) % 10] + "!");
+        alert("Accusation " + a + ": I accuse " + friends[(a - 1) % friends.length] + " with the " + weapons[(a - 1) % weapons.length] + "  in the " + locations[(a - 1) % locations.length] + "!");
         // console.log(a);
-        // console.log(b);
-        // console.log(c);
     }
 }
 
